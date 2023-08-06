@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>ABC LEARNING CENTER</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>ABC LEARNING CENTER</a></div>
+            <input type="text" placeholder="Search" ..>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">about Us</a></li>
+                    <li><a href="./course/course.html">Cources</a></li>
+                    <li><a href="./schedule.html">Cources Schedule</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <section id="form">
+            <div class="regist" style="margin-top: 100px;">
+                <h1 align="center">REGISTRATION</h1>
+                <p align="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolore ullam! Maxime
+                    eligendi
+                    excepturi dolorem vitae! Sed distinctio facere at.</p>
+                <br>
+                <form onclick="addValidate()" id="leadRegistration" name="leadRegistration" action="./thank.html">
+                    <div class="form-element">
+                        <label for="name-register">Full Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-element">
+                        <label for="email-register">Email</label>
+                        <input type="email" id="email-register" name="email">
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-element">
+                        <label for="nation">Nation</label>
+                        <input type="text" id="nation" name="nation">
+                    </div>
+                    <div class="form-element" style="margin-bottom: 20px;">
+                        <label for="course">Select Course</label><br>
+                        <select class="form-element" name="course" id="course">
+                            <option value="0" selected="" disabled="">--SELECT--</option>
+                            <option value="Learn Java">Learn Java</option>
+                            <option value="Learn HTML">Learn HTML</option>
+                            <option value="Learn .NET">Learn .NET</option>
+                            <option value="Learn Microsoft">Learn Microsoft</option>
+                        </select>
+                    </div>
+                    <div class="form-element" style="margin-bottom: 20px;">
+                        <label for="typeclass">Select Type Class</label><br>
+                        <select class="form-element" name="typeclass" id="typeclass">
+                            <option value="0" selected="" disabled="">--SELECT--</option>
+                            <option value="Class A">Class A</option>
+                            <option value="Class B">Class B</option>
+                            <option value="Class C">Class C</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
+</body>
+
+</html>

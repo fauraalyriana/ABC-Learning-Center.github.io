@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>ABC LEARNING CENTER</a></div>
+            <input type="text" placeholder="Search"..>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">about Us</a></li>
+                    <li><a href="./course/course.html">Cources</a></li>
+                    <li><a href="./schedule.html">Cources Schedule</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pop Up Add -->
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="register">
+            <div class="register-form">
+                <h2>Add Lead</h2>
+                <form class="leadRegistration" id="leadRegistration" action="./dashboard.html">
+                    <div class="form-element">
+                        <label for="name-register">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Full Name">
+                    </div>
+                    <div class="form-element">
+                        <label for="email-register">Email</label>
+                        <input type="email" id="email-register" name="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder=" Enter Contact Number">
+                    </div>
+                    <div class="form-element">
+                        <label for="nation">Nation</label>
+                        <input type="text" id="nation" name="nation" placeholder=" Enter Your Nation">
+                    </div>
+                    <div class="form-element">
+                        <label for="course">Select Course</label><br>
+                        <select class="form-element" name="course" id="course">
+                            <option value="0" selected="" disabled="">--SELECT--</option>
+                            <option value="Learn Java">Learn Java</option>
+                            <option value="Learn HTML">Learn HTML</option>
+                            <option value="Learn .NET">Learn .NET</option>
+                            <option value="Learn Microsoft">Learn Microsoft</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <label for="typeclass">Select Type Class</label><br>
+                        <select class="form-element" name="typeclass" id="typeclass">
+                            <option value="0" selected="" disabled="">--SELECT--</option>
+                            <option value="Class A">Class A</option>
+                            <option value="Class B">Class B</option>
+                            <option value="Class C">Class C</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <button type="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop up Edit -->
+    <div class="popup2">
+        <div class="close-btn2">&times;</div>
+        <div class="register">
+            <div class="register-form">
+                <h2>Edit Lead</h2>
+                <form class="leadEdit" id="leadEdit" action="./dashboard.html">
+                    <div class="form-element">
+                        <label for="name-register">Full Name</label>
+                        <input type="text" id="name" name="name" class="editName" placeholder="Enter Full Name">
+                    </div>
+                    <div class="form-element">
+                        <label for="email-register">Email</label>
+                        <input type="email" id="email-register" name="email" class="editEmail"
+                            placeholder="Enter Email">
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" id="phone" name="phone" class="editContact"
+                            placeholder=" Enter Contact Number">
+                    </div>
+                    <div class="form-element">
+                        <label for="nation">Nation</label>
+                        <input type="text" id="nation" name="nation" class="editNation" placeholder=" Enter Your Nation">
+                    </div>
+                    <div class="form-element">
+                        <label for="course">Select Course</label><br>
+                        <select name="course" id="course" class="editCourse">
+                            <option value="0" selected="" disabled="">--SELECT--</option>
+                            <option value="Learn Java">Learn Java</option>
+                            <option value="Learn HTML">Learn HTML</option>
+                            <option value="Learn .NET">Learn .NET</option>
+                            <option value="Learn Microsoft">Learn Microsoft</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <label for="typeclass">Select Type Class</label><br>
+                        <select name="typeclass" id="typeclass" class="editTypeclass">
+                            <option value="0" selected="" disabled="">--SELECT--</option>
+                            <option value="Class A">Class A</option>
+                            <option value="Class B">Class B</option>
+                            <option value="Class C">Class C</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <button type="submit" class="btn btn-submit">Edit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- List -->
+    <div class="schedule-bg">
+        <h2>List Leads</h2>
+        <span class="addnew">&#43; New</span>
+        <div class=" table-schedule">
+            <table class="python-schedule" id="data-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact Number</th>
+                        <th>Nation</th>
+                        <th>Course</th>
+                        <th>Type Class</th>
+                        <th>Action</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>
